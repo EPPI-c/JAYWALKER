@@ -60,7 +60,7 @@ function M:init(stateMachine, gameState, menuState)
         ui.createButton(button2x, ScreenAreaHeight - 100, buttonwidth, 50, menu,
             menu_func, 1, 0.2),
     }
-    self.menu = ui.createKeyBoardNavigation(buttons)
+    self.menu = ui.createKeyBoardNavigationHorizontal(buttons)
     self.menu.selected = 1
 end
 
